@@ -7,13 +7,21 @@ document.querySelectorAll('[data-carousel]').forEach((section) => {
   section.querySelector('[data-next]')?.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
 });
 
-// Level of cover buttons
+// Level of cover buttons: the quote button stays "Choose cover" until a level is picked
 const levels = document.querySelectorAll('#levels .level');
 const quoteBtn = document.getElementById('quote-btn');
 levels.forEach((b) => b.addEventListener('click', () => {
   levels.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-  if (quoteBtn) quoteBtn.textContent = 'Add to quote';
+  if (quoteBtn) {
+    quoteBtn.textContent = 'Add to quote';
+    quoteBtn.classList.remove('btn-idle');
+    quoteBtn.setAttribute('aria-disabled', 'false');
+  }
 }));
+quoteBtn?.addEventListener('click', (e) => {
+  if (quoteBtn.getAttribute('aria-disabled') === 'true') e.preventDefault();
+});
+
 
 // Dashed orange line that draws itself as you scroll through the split sections
 try{
