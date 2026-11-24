@@ -138,3 +138,11 @@ footer a { color: #fff; }
   box-shadow: 5px 5px 0 var(--color-ink); cursor: not-allowed;
 }
 .btn-idle:hover { transform: none; box-shadow: 5px 5px 0 var(--color-ink); }
+
+/* Login: plain text link with a black underline */
+.login-link {
+  font-size: 18px; font-weight: 700; color: var(--color-ink);
+  background: none !important; padding-bottom: 0 !important; animation: none !important;
+  text-decoration: underline; text-decoration-color: var(--color-ink);
+  text-decoration-thickness: 2px; text-underline-offset: 4px;
+}
