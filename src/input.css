@@ -94,3 +94,12 @@ details.acc[open]::details-content { block-size: auto; opacity: 1; }
 .track::-webkit-scrollbar { display: none; }
 .rev-card, .trade-card { flex: 0 0 min(340px, 82vw); scroll-snap-align: start; }
 @media (min-width: 860px) { .rev-card, .trade-card { flex: 0 0 calc((100% - 40px) / 3); } }
+
+/* Top nav */
+.btn-nav { font-size: 18px; padding: 15px 30px; }
+.btn-white { background: #fff; }
+.crumb { text-decoration: underline; background: none !important; padding-bottom: 0 !important; }
+.dd:hover > .nav-link svg, .dd:focus-within > .nav-link svg { transform: rotate(180deg); }
+.nav-link svg { transition: transform .15s ease; }
+.tb-link, .nav-link, .crumb { background-image: none !important; }
+a[aria-label="Rhino home"] { background: none !important; padding-bottom: 0 !important; animation: none !important; }
