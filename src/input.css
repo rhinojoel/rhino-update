@@ -124,3 +124,9 @@ footer a { color: #fff; }
 .fyi-dash rect { animation: fyiDash .7s linear infinite; }
 @keyframes fyiDash { to { stroke-dashoffset: 26; } }
 @media (prefers-reduced-motion: reduce) { .fyi-dash rect { animation: none; } }
+
+/* Scott pops out of the "Did you know?" box and shakes on hover */
+.fyi-box { overflow: visible; }
+@keyframes shake { 0%,100% { transform: none; } 15% { transform: rotate(-3deg); } 30% { transform: rotate(2.5deg); } 45% { transform: rotate(-2deg); } 60% { transform: rotate(1.5deg); } 75% { transform: rotate(-1deg); } }
+.shake-hover:hover { animation: shake .6s ease-in-out 1; }
+@media (prefers-reduced-motion: reduce) { .shake-hover:hover { animation: none; } }
