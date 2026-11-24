@@ -103,3 +103,4 @@ details.acc[open]::details-content { block-size: auto; opacity: 1; }
 .nav-link svg { transition: transform .15s ease; }
 .tb-link, .nav-link, .crumb { background-image: none !important; }
 a[aria-label="Rhino home"] { background: none !important; padding-bottom: 0 !important; animation: none !important; }
+footer a { color: #fff; }
