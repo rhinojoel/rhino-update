@@ -5,36 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rhino | New website</title>
   <meta name="description" content="A starting point for the new Rhino website.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dist/styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <a class="logo" href="/">Rhino</a>
-    <nav aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+<body class="bg-white font-sans leading-relaxed text-neutral-900">
+  <header class="mx-auto flex max-w-4xl items-center justify-between p-6">
+    <a href="/" class="text-xl font-bold">Rhino</a>
+    <nav aria-label="Main" class="flex gap-6">
+      <a href="#about" class="text-blue-600 hover:underline">About</a>
+      <a href="#contact" class="text-blue-600 hover:underline">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Your headline goes here</h1>
-      <p>A short, plain English line that says what you do and who it's for.</p>
-      <a class="button" href="#contact">Get in touch</a>
+    <section class="mx-auto max-w-4xl px-6 py-16">
+      <h1 class="mb-4 text-4xl font-bold tracking-tight">Your headline goes here</h1>
+      <p class="mb-6 text-lg text-neutral-600">A short, plain English line that says what you do and who it's for.</p>
+      <a href="#contact" class="inline-block rounded-md bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700">Get in touch</a>
     </section>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>Add your main content here.</p>
+    <section id="about" class="bg-neutral-100">
+      <div class="mx-auto max-w-4xl px-6 py-12">
+        <h2 class="mb-2 text-2xl font-semibold">About</h2>
+        <p>Add your main content here.</p>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Add contact details or a form here.</p>
+    <section id="contact">
+      <div class="mx-auto max-w-4xl px-6 py-12">
+        <h2 class="mb-2 text-2xl font-semibold">Contact</h2>
+        <p>Add contact details or a form here.</p>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="mx-auto max-w-4xl border-t border-neutral-200 p-6 text-sm text-neutral-600">
     <p>&copy; Rhino. All rights reserved.</p>
   </footer>
 </body>
